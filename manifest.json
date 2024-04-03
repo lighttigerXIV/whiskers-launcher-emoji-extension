@@ -1,0 +1,10 @@
+{
+  "id": "lighttigerxiv/emojis",
+  "name": "Emojis",
+  "version_name": "1.0.0",
+  "version_code": 1,
+  "description": "An extension to quickly get emojis",
+  "os": ["*"],
+  "keyword": "em",
+  "settings": []
+}
