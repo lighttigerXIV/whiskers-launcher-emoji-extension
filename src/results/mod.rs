@@ -2,6 +2,7 @@ use whiskers_launcher_rs::{
     actions::{Action, CopyToClipboard},
     api::extensions::{send_extension_results, Context},
     results::{Text, WhiskersResult},
+    utils::get_search,
 };
 
 struct EmojiResult {
@@ -10,10 +11,15 @@ struct EmojiResult {
 }
 
 pub fn handle_results(context: Context) {
-    let search_text = context.search_text.unwrap();
+    let search = get_search(context.search_text.unwrap());
+
+    if search.search_text.is_empty() {
+        send_extension_results(vec![]);
+    }
+
     let mut results = Vec::<WhiskersResult>::new();
 
-    let emojis = emoji::search::search_annotation(&search_text, "en")
+    let emojis = emoji::search::search_annotation(&search.search_text, "en")
         .into_iter()
         .map(|e| EmojiResult {
             glyph: e.glyph.to_owned(),
