@@ -5,8 +5,6 @@ edition = "2021"
 
 [dependencies]
 emojis = "0.6.4"
-#whiskers-launcher-rs = {path = "C:\\Users\\lighttigerXIV\\Projects\\WhiskersApps\\whiskers-launcher-rs"}
-#whiskers-launcher-rs = { path = "/home/lighttigerxiv/Projects/Cli/whiskers-launcher-rs" }
-whiskers-launcher-rs = {git = "https://github.com/Whiskers-Apps/whiskers-launcher-rs"}
 convert_case = "0.6.0"
-sniffer-rs = "1.0.2"
+sniffer-rs = "1.1.1"
+whiskers-launcher-core = "0.3.0"
