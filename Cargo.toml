@@ -1,11 +1,10 @@
 [package]
 name = "whiskers-launcher-emoji-extension"
-version = "2.0.0"
+version = "2.1.0"
 edition = "2021"
 
 [dependencies]
-emojis = "0.6.2"
-whiskers-launcher-rs = {path = "C:\\Users\\lighttigerXIV\\Projects\\WhiskersApps\\whiskers-launcher-rs"}
-#whiskers-launcher-rs = { path = "/home/lighttigerxiv/Projects/Cli/whiskers-launcher-rs" }
-fuzzy-matcher = "0.3.7"
+emojis = "0.6.4"
 convert_case = "0.6.0"
+whiskers-launcher-core = "0.3.1"
+sniffer-rs = "1.1.1"
